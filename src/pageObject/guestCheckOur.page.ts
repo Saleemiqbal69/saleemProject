@@ -20,7 +20,7 @@ export class CheckOutPage {
   }
    
    
-    async enterFullName(FullName: string) {
+    async enterFullName (FullName: string) {
       await this.page.locator(this.FullName).fill(FullName);
    }
     async enterPhoneNo(phoneNo: any) {
