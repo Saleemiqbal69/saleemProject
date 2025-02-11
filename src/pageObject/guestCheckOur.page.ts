@@ -7,7 +7,7 @@ export class CheckOutPage {
 
    public readonly FullName = '[id="full_name"]';
    private readonly PhonNumber = '[id="contact_phone"]';
-   private readonly Address = '[placeholder="Enter your complete address]';
+   private readonly Address = '[placeholder="Enter your complete address"]';
    private readonly Landmark = '[placeholder="any famous place nearby"]';
    private readonly Instructions = '[id="delivery_instruction"]';
    private readonly paymentMethod = '[class*="ck-payment-cards-options not"]'
@@ -43,12 +43,15 @@ export class CheckOutPage {
       await this.page.locator(this.Entervocher).fill(Entervocher);
    }
 
-    async pressPlaceOrderBtn(){
-      await this.page.locator(this.placeOrder).click();
-   }
+   // async pressPlaceOrderBtn(){
+     // await this.page.locator(this.placeOrder).click();
+   //}
    async presspamentMethod(){
    await this.page.locator(this.paymentMethod).click();
   }
+  async pressPlaceOrderBtn(){
+   await this.page.locator(this.placeOrder).click();
+}
 
 
    }

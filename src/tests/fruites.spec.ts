@@ -22,12 +22,12 @@ test('add to cart testcases', async ({page})=>{
     await cartpage.areaDropDown();
     // await page.waitForTimeout(10000);
     await cartpage.pressselectAria();
-    await cartpage.pressPreOrderBtn()
+    await cartpage.pressPreOrderBtn();
     await guestCheckOut.enterFullName('ahmad ali');
-    await guestCheckOut.enterPhoneNo('0309-3748593')
-    await guestCheckOut.enterAddress('lahore') 
-    await guestCheckOut.enterlandmark('Bahria town')
-    await guestCheckOut.Enterinstruction('Canal Gerden')
+    await guestCheckOut.enterPhoneNo('0309-3748593');
+    await guestCheckOut.enterAddress('lahore') ;
+    await guestCheckOut.enterlandmark('Bahria town');
+    await guestCheckOut.Enterinstruction('Canal Gerden');
     await guestCheckOut.presspamentMethod();
     await guestCheckOut.enterVocher('6895855948322039');
     await guestCheckOut.pressPlaceOrderBtn();
